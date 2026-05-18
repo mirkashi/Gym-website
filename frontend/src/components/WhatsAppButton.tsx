@@ -3,9 +3,11 @@ import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsAppButton() {
+  // TODO: Replace with actual business WhatsApp number (e.g. from env var NEXT_PUBLIC_WHATSAPP_NUMBER)
+  const whatsappNumber = "15551234567";
   return (
     <motion.a
-      href="https://wa.me/15551234567?text=Hi%2C%20I'm%20interested%20in%20joining%20EliteFit%20Gym!"
+      href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I'm%20interested%20in%20joining%20EliteFit%20Gym!`}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"

@@ -15,6 +15,7 @@ const schema = z.object({
 });
 type ContactForm = z.infer<typeof schema>;
 
+// TODO: Replace with actual business contact information
 const info = [
   { icon: MapPin, label: "Location", value: "123 Fitness Avenue, New York, NY 10001" },
   { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
